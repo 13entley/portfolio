@@ -1,40 +1,132 @@
+
 body {
     text-align: center;
+}
+
+
+/* Main */
+
+#mainmenu
+{
+    font-size:45px;
+    padding-top:1em;
+}
+a{
+    color:#01d0fa;
+}
+.mainimg{
+    background-image: url("///Users/13entley/www/portfolio/img/mbp.jpg");
+    height:1000px;
+    background-size:cover;
+    opacity: 0.8;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 main{
     margin-top:0 auto;
     margin-left:0 auto;
 }
-h1 {
-    color:#0099ff;
+spanmain{
+    color:#01d0fa;
+    text-shadow:2px 2px black;
+    font-weight:bold;
 }
 header.nav-header-width{
     width:100%
 }
-h1.title-font{
-    font-family: 'Damion', cursive;
-    font-size:50px;
-    text-align:left;
-    margin-bottom:0;
-}
-h1.flair-font
+h1.title-fontmain
 {
     font-family: 'Damion', cursive;
-    font-size:20px;
-    text-align:left;
-    margin-top:0;
-    margin-bottom:0;
+    font-size:60px;
+    text-align:center;
+    margin:0 auto;
+    padding-top:.5em;
+    color:#01d0fa;
+    text-shadow:3px 3px black;
+}
+h1.flair-fontmain
+{
+    font-family: 'Damion', cursive;
+    font-size:30px;
+    text-align:center;
+    margin:0 auto;
+    color:#01d0fa;
+    text-shadow:2px 2px black;
+}
+h1.midlogo
+{
+    font-family: 'Dr Sugiyama', cursive;
+    font-size:20em;
+    color:#01d0fa;
+    opacity:0.6;
+    margin:0 auto;
+    width:220px;
+    height:240px;
+    font-weight:bold;
+}
+h1.midlogo:hover{
+    opacity:0.99;
 }
 .smicon{
-    margin-top:2.5em;
+    margin-top:3.5em;
     align-content:center;
-
+    text-shadow:2px 2px black;
 }
 
+p.method {
+    font-size:20px;
+}
 
+/*  About */
+h1.title-fontabout
+{
+    font-family: 'Damion', cursive;
+    font-size:60px;
+    text-align:center;
+    margin:0 auto;
+    padding-top:.5em;
+    color:#01d0fa;
+    text-shadow:2px 2px black;
+}
+h1.flair-fontabout
+{
+    font-family: 'Damion', cursive;
+    font-size:30px;
+    text-align:center;
+    margin:0 auto;
+    color:#01d0fa;
+    text-shadow:1px 1px black;
+}
 /* ICONS */
 
-#icontwitter{
+/* Background images*/
 
+
+.mainimg{
+    background-image: url("///Users/13entley/www/portfolio/img/mbpt1.jpg");
+    background-size:cover;
+    opacity: 0.99;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    height:850px;
+}
+.aboutimg{
+    background-image: url("///Users/13entley/www/portfolio/img/mbp1.jpg");
+    background-size:cover;
+    opacity: 0.99;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    height:1000px;
 }
 
+
+
+
+/* Java function*/
+
+
+.popup_content {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    padding: 2em;
+    left:0;
+
+}
