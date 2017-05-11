@@ -5,114 +5,142 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Damion|Dr+Sugiyama" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion|Dr+Sugiyama|Lalezar" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet'/>
     <script
             src="http://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-    <title>Eric 3entley Portfolio</title>
+    <title>Eric Bentley | Front-End & PHP Developer</title>
 </head>
 <body>
 <div class="mainimg">
 
 
-<section class="container-fluid">
-    <section class="row">
+    <section class="container-fluid">
+        <section class="row">
             <hgroup class="col-md-3">
-                    <h1 class="title-fontmain">Eric Bentley</h1>
-                    <h1 class="flair-fontmain">Front-End & PHP Developer</h1>
+                <h1 class="title-fontmain">Eric Bentley</h1>
+                <h1 class="flair-fontmain">Front-End & PHP Developer</h1>
             </hgroup>
             <nav class="menu">
                 <hgroup class="col-md-6">
-                        <div id="mainmenu">
-                            <a href="#" class="about" data-content="about">
-                                <i class="icon about"></i><spanmain>About</spanmain>
-                            </a>
-                            <a href="#" class="work" data-content="work">
-                                <i class="icon work"></i><spanmain>Work</spanmain>
-                            </a>
-                            <a href="#" class="method" data-content="method">
-                                <i class="icon method"></i><spanmain>Method</spanmain>
-                            </a>
-                            <a href="#" class="contact" data-content="contact">
-                                <i class="icon contact"></i><spanmain>Contact</spanmain>
-                            </a>
-                        </div>
+                    <div id="mainmenu">
+                        <a href="#" class="about" data-content="about">
+                            <i class="icon about"></i>
+                            <spanmain>About</spanmain>
+                        </a>
+                        <a href="#" class="work" data-content="work">
+                            <i class="icon work"></i>
+                            <spanmain>Work</spanmain>
+                        </a>
+                        <a href="#" class="method" data-content="method">
+                            <i class="icon method"></i>
+                            <spanmain>Method</spanmain>
+                        </a>
+                        <a href="#" class="contact" data-content="contact">
+                            <i class="icon contact"></i>
+                            <spanmain>Contact</spanmain>
+                        </a>
+                    </div>
                 </hgroup>
             </nav>
             <hgroup class="smicon">
-            <nav class="col-md-3">
-                <a href="https://linkedin.com/in/Eric-Bentley" target="_blank" class="linkedin" data-bypass=""><img src="img/linkedin.png"  style="width: 64px;height: 64px;"><i class="iconlinkedin"></i></a>
-                <a href="https://twitter.com/13entley" target="_blank" class="twitter" data-bypass=""><img src="img/twitter.png" style="width:64px;height:64px"><i class="icontwitter"></i></a>
-                <a href="https://github.com/13entley" target="_blank" class="github" data-bypass=""><img src="img/github.png" style="width: 64px;height: 64px;"><i class="icongithub"></i></a>
-                <a href="http://instagram.com/13entley" target="_blank" class="instagram" data-bypass=""><img src="img/instagram.png" style="width: 64px;height: 64px;"><i class="iconinstagram"></i></a>
-                <a href="https://upwork.com/13entley"target="_blank" class="upwork" data-bypass=""><img src="img/upwork.png": style="width: 64px;height: 64px;"><i class="iconupwork"></i></a>
-            </nav>
+                <nav class="col-md-3">
+                    <a href="https://linkedin.com/in/Eric-Bentley" target="_blank" class="linkedin" data-bypass=""><img
+                            class="icons" src="img/linkedin.png" style="width: 64px;height: 64px;"><i
+                            class="iconlinkedin"></i></a>
+                    <a href="https://twitter.com/13entley" target="_blank" class="twitter" data-bypass=""><img
+                            class="icons" src="img/twitter.png" style="width:64px;height:64px"><i
+                            class="icontwitter"></i></a>
+                    <a href="https://github.com/13entley" target="_blank" class="github" data-bypass=""><img
+                            class="icons" src="img/github.png" style="width: 64px;height: 64px;"><i
+                            class="icongithub"></i></a>
+                    <a href="http://instagram.com/13entley" target="_blank" class="instagram" data-bypass=""><img
+                            class="icons" src="img/instagram.png" style="width: 64px;height: 64px;"><i
+                            class="iconinstagram"></i></a>
+                    <a href="https://upwork.com/13entley" target="_blank" class="upwork" data-bypass=""><img
+                            class="icons" src="img/upwork.png" style="width: 64px;height: 64px;"><i
+                            class="iconupwork"></i></a>
+                </nav>
             </hgroup>
+        </section>
     </section>
-</section>
 
     <br><br><br><br><br><br><br>
 
     <section class="middleLogo">
-         <h1 class="midlogo">E3</h1>
+        <h1 class="midlogo">E3</h1>
     </section>
 
 
-        <section class="row">
+    <section class="row">
 
 
+        <script>
+            $(function () {
+                $('#mainmenu a').click(function (ev) {
+                    var content = $(this).data('content');
+                    var div = $('#' + content);
+                    div.show();
 
-            <script>
-                $(function(){
-                    $('#mainmenu a').click(function(ev) {
-                        var content = $(this).data('content');
-                        var div = $('#'+content);
-                        div.show();
-
-                        div.css({
-                            'position': 'absolute',
-                            'top':  document.body.clientHeight + 'px',
-                            'min-height': (document.body.clientHeight + 400) + 'px'
-                        });
-                        div.animate({
-                            'top': '150px'
-                        });
+                    div.css({
+                        'position': 'absolute',
+                        'top': document.body.clientHeight + 'px',
+                        'min-height': (document.body.clientHeight) + 'px'
+                    });
+                    div.animate({
+                        'top': '150px'
                     });
                 });
-            </script>
-        </section>
+            });
+        </script>
+    </section>
 
 
-    <div id="about" class="popup_content" style="display: none">ABOUT
+    <div id="about" class="popup_content" style="display: none"><h1 class="about">ABOUT</h1>
         <section class="container">
-            <br><br><br><br><br><br><br><br><br>
-            <div class="methodbody">
+            <br>
+            <div class="aboutbody">
                 <section class="row">
-                    <section class="col-md-4 col-md-offset-2">
-
-                        <p class="method"><br>Throughout my career I have developed plenty of skills to help not
-                            only with web development but also procurement and implementation.  My background
-                            consists of sales, marketing, and an entrepreneurial spirit along with my skills
-                            in front-end and back-end development.
-                        </p>
+                    <section class="col-md-12">
+                        <h3 class="aboutflair">---Front-End & PHP Developer---</h3>
                     </section>
-                    <section class="col-md-4">
-                        <h1>HTML5 | CSS3 | Javascript | PHP | AJAX |<br>
+                    <br>
+                    <section class="col-md-12">
+                        <h1 class="about">Eric Bentley</h1>
+                    </section>
+                    <br>
+                </section>
+                <section class="row">
+                    <section class="col-md-12">
+                        <h3 class="aboutflair">HTML5 | CSS3 | Javascript | PHP | AJAX |
                             Node.JS | PURE | LeSS | SaSS | JQuery |
-                            SQL | mySQL </h1>
+                            SQL | mySQL </h3>
 
                     </section>
                 </section>
+                <div class="row">
+                    <section class="col-md-12">
+
+                        <p class="abouttext"><br>Throughout my career I have developed plenty of skills to help not
+                            only with web development but also procurement and implementation. My background
+                            consists of sales, marketing, and an entrepreneurial spirit along with my skills
+                            in front-end and back-end development.
+                            <br>
+
+                        </p>
+                    </section>
+                </div>
             </div>
         </section>
     </div>
-    <div id="work" class="popup_content" style="display: none">WORK
+    <div id="work" class="popup_content" style="display: none"><h1 class="about">WORK</h1>
         <section class="container">
+            <br><br><br><br><br>
             <section class="row">
                 <section class="col-md-3 col-md-offset-3">
                     <h1>Movies Website</h1>
@@ -122,6 +150,8 @@
                 </section>
                 <section class="col-md-3"></section>
             </section>
+            <br>
+            <br>
             <section class="row">
                 <section class="col-md-3 col-md-offset-3">
                     <h1>Hackathon Real Estate</h1>
@@ -132,28 +162,64 @@
             </section>
         </section>
     </div>
-    <div id="method" class="popup_content" style="display: none">METHOD
 
+    <div id="method" class="popup_content" style="display: none"><h1 class="about">METHOD</h1>
+        <section class="container">
+            <br><br><br><br>
+            <div class="methodbody">
+                <section class="row">
+                    <section class="col-md-2 col-md-offset-3">
+                        <p class="methodheader">
+                            Discovery:
+                            <br>
+                            <br>
+                            Research:
+                            <br>
+                            <br>
+                            Design:
+                            <br>
+                            <br>
+                            Sketch:
+                            <br>
+                            <br>
+                            Mockup:
+                            <br>
+                            <br>
+                            Implementation:
+                        </p>
+                    </section>
+                    <section class="col-md-offset-1 col-md-5">
+                        <p class="methodtext">
+                            I first understand the project scope, interviewing users,
+                            and ask targeted questions to help determine the emotion and feel of the brand.
+                            <br>
+                        </p>
+                    </section>
+                </section>
+            </div>
+        </section>
     </div>
-
-    <div id="contact" class="popup_content" style="display: none">CONTACT
+    <div id="contact" class="popup_content" style="display: none"><h1 class="about">CONTACT</h1>
         <section class="container">
             <section class="row">
                 <section class="col-md-6">
-                    <br><br><br><br><br>
+                    <br><br>
                     <div class="contacttext">
-                        <h1>Coffee and Chat?</h1>
-                        <br>
-                        <p> If you have any questions, concerns or comments, please feel free to reach me
+                        <h1 class="about">Coffee and Chat?</h1>
+                        <p class="contact"> If you have any questions, concerns or comments, please feel free to reach
+                            me
                             at any of the contact methods below.</p>
                         <br>
                         <br>
-                        <a href="https://twitter.com/13entley" target="_blank" class="twitter" data-bypass=""><i
-                                class="icontwitter"></i> Twitter </a>
+                        <a href="https://linkedin.com/in/Eric-Bentley" target="_blank" class="linkedin"
+                           data-bypass=""><span>LinkedIn</span></a>
                         <br>
                         <br>
-                        <a href="https://github.com/13entley" target="_blank" class="github" data-bypass=""><i
-                                class="icongithub"></i><span>GitHub</span></a>
+                        <a href="https://twitter.com/13entley" target="_blank" class="twitter" data-bypass=""><span>Twitter</span></a>
+                        <br>
+                        <br>
+                        <a href="https://github.com/13entley" target="_blank" class="github"
+                           data-bypass=""><span>GitHub</span></a>
                         <br>
                         <br>
                         <a href="http://instagram.com/13entley" target="_blank" class="instagram" data-bypass=""><i
@@ -162,29 +228,18 @@
                         <br>
                         <a href="https://upwork.com/13entley" target="_blank" class="upwork" data-bypass=""><i
                                 class="iconupwork"></i><span>Upwork</span></a>
-                        <br>
-                        <br>
                     </div>
                 </section>
                 <section class="col-md-6">
-                    <br><br><br><br><br><br>
-                    <img src="https://api.mapbox.com/styles/v1/13entley/cj2j037kb003b2rmqcoahxhxf/static/14.455042,50.078281,12.40,0.00,0.00/600x400?access_token=pk.eyJ1IjoiMTNlbnRsZXkiLCJhIjoiY2oyajAwYWhzMDAwaDMybWlrM3o0dWN1cCJ9.HW3sApHEqaAdaYDwW9UW3w" width="600"height="400"alt="Teal" />
-
-
-
+                    <br><br><br>
+                    <img class="map"
+                         src="https://api.mapbox.com/styles/v1/13entley/cj2j037kb003b2rmqcoahxhxf/static/14.455042,50.078281,12.40,0.00,0.00/600x400?access_token=pk.eyJ1IjoiMTNlbnRsZXkiLCJhIjoiY2oyajAwYWhzMDAwaDMybWlrM3o0dWN1cCJ9.HW3sApHEqaAdaYDwW9UW3w"
+                         width="600" height="430" alt="Teal"/>
                 </section>
             </section>
         </section>
     </div>
-
-    <div class="dark-cover"></div>
-
     <div class="backgroundstandard"></div>
-    <div class="background about"></div>
-    <div class="background work"></div>
-    <div class="background method"></div>
-    <div class="background contact"></div>
-    <div class="background social"></div>
 </div>
 </body>
 </html>

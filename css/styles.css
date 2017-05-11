@@ -1,6 +1,7 @@
 
 body {
     text-align: center;
+    font-family: 'Lalezar', cursive;
 }
 
 
@@ -15,7 +16,7 @@ a{
     color:#01d0fa;
 }
 .mainimg{
-    background-image: url("///Users/13entley/www/portfolio/img/mbp.jpg");
+    background-image: url("///Users/13entley/www/portfolio/img/mbpt1.jpg");
     height:1000px;
     background-size:cover;
     opacity: 0.8;
@@ -27,8 +28,10 @@ main{
 }
 spanmain{
     color:#01d0fa;
-    text-shadow:2px 2px black;
+    text-shadow:3px 3px black;
     font-weight:bold;
+    font-size:34px;
+    padding:0em 0.5em 0em 0.5em;
 }
 header.nav-header-width{
     width:100%
@@ -96,6 +99,36 @@ h1.flair-fontabout
     color:#01d0fa;
     text-shadow:1px 1px black;
 }
+h1.about{
+    color:#01d0fa;
+    text-shadow:2px 2px #4f4f4f;
+    font-size:60px;
+    font-family: 'Lalezar', cursive;
+
+}
+/* Method */
+
+.methodheader
+{
+    font-size:36px;
+    font-weight:bold;
+    align-content:center;
+    color:#01d0fa;
+    text-shadow:2px 2px black;
+}
+.methodtext{
+    font-size:20px;
+}
+/* Contact */
+
+span{
+    color:#01D0FA;
+    font-weight:bold;
+    font-size:20px;
+}
+p.contact{
+    font-size:20px;
+}
 /* ICONS */
 
 /* Background images*/
@@ -106,7 +139,7 @@ h1.flair-fontabout
     background-size:cover;
     opacity: 0.99;
     filter: alpha(opacity=50); /* For IE8 and earlier */
-    height:850px;
+    height:1000px;
 }
 .aboutimg{
     background-image: url("///Users/13entley/www/portfolio/img/mbp1.jpg");
@@ -129,4 +162,16 @@ h1.flair-fontabout
     padding: 2em;
     left:0;
 
+}
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+    h1.midlogo {position:absolute; top:0; padding-top:.2em; padding-left:.3em; opacity:0.99; text-shadow:2px 2px black;}
+    h1.title-fontmain {padding-top: 7.5em; font-size:48px;}
+    h1.flair-fontmain {font-size:24px;}
+    #mainmenu {padding-top:5em;}
+    .smicon{position:absolute; top:0;margin-top:32em;}
+    h3.aboutflair {font-size:18px;}
+    .map {width:300px; height:300px;}
+    .mainimg{background-position:30% 100%;}
 }
