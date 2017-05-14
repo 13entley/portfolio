@@ -14,14 +14,18 @@ body {
 }
 a{
     color:#01d0fa;
+    text-decoration:none;
 }
-.mainimg{
-    background-image: url("///Users/13entley/www/portfolio/img/mbpt1.jpg");
-    height:1000px;
-    background-size:cover;
-    opacity: 0.8;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+a:hover{
+    text-decoration: none;
 }
+/*.mainimg{*/
+    /*background-image: url("../img/mbpt1.jpg");*/
+    /*height:1000px;*/
+    /*background-size:cover;*/
+    /*opacity: 0.8;*/
+    /*filter: alpha(opacity=50); !* For IE8 and earlier *!*/
+/*}*/
 main{
     margin-top:0 auto;
     margin-left:0 auto;
@@ -99,25 +103,40 @@ h1.flair-fontabout
     color:#01d0fa;
     text-shadow:1px 1px black;
 }
+h3.flair-fontmain
+{
+    font-family: 'Damion', cursive;
+    font-size:30px;
+    text-align:center;
+    margin:0 auto;
+    color:#01d0fa;
+    font-weight:bold;
+}
 h1.about{
     color:#01d0fa;
     text-shadow:2px 2px #4f4f4f;
     font-size:60px;
     font-family: 'Lalezar', cursive;
-
+}
+h3.about{
+    color:#01d0fa;
+    font-size:26px;
+    font-family: 'Lalezar', cursive;
+}
+.abouttext{
+    font-size:22px;
 }
 /* Method */
 
-.methodheader
-{
+h1.methodtitle {
     font-size:36px;
     font-weight:bold;
     align-content:center;
     color:#01d0fa;
     text-shadow:2px 2px black;
 }
-.methodtext{
-    font-size:20px;
+.methodbody{
+    font-size:28px;
 }
 /* Contact */
 
@@ -135,19 +154,19 @@ p.contact{
 
 
 .mainimg{
-    background-image: url("///Users/13entley/www/portfolio/img/mbpt1.jpg");
+    background-image: url("../img/mbpt1.jpg");
     background-size:cover;
     opacity: 0.99;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     height:1000px;
 }
-.aboutimg{
-    background-image: url("///Users/13entley/www/portfolio/img/mbp1.jpg");
-    background-size:cover;
-    opacity: 0.99;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    height:1000px;
-}
+/*.aboutimg{*/
+    /*background-image: url("///Users/13entley/www/portfolio/img/mbp1.jpg");*/
+    /*background-size:cover;*/
+    /*opacity: 0.99;*/
+    /*filter: alpha(opacity=50); !* For IE8 and earlier *!*/
+    /*height:1000px;*/
+/*}*/
 
 
 
@@ -160,18 +179,48 @@ p.contact{
     position: absolute;
     background-color: white;
     padding: 2em;
-    left:0;
-
+    left: 0;
+}
+.closer{
+    position: absolute;
+    right: 0;
+    padding-right: 16em;
+    top: 0;
+    padding-top: 3.8em;
 }
 /* Media Queries */
 
-@media only screen and (max-width: 500px) {
-    h1.midlogo {position:absolute; top:0; padding-top:.2em; padding-left:.3em; opacity:0.99; text-shadow:2px 2px black;}
-    h1.title-fontmain {padding-top: 7.5em; font-size:48px;}
+@media only screen and (max-width: 480px) {
+    body{
+        text-align:center;
+    }
+    h1.midlogo {position:absolute; top:0; padding-left:0.6em; opacity:0.99; font-size:200px;}
+    h1.title-fontmain {padding-top: 4em; font-size:48px;}
     h1.flair-fontmain {font-size:24px;}
-    #mainmenu {padding-top:5em;}
-    .smicon{position:absolute; top:0;margin-top:32em;}
+    #mainmenu {padding-top:3em;}
+    .smicon{position:absolute; top:0;margin-top:60em;}
     h3.aboutflair {font-size:18px;}
     .map {width:300px; height:300px;}
-    .mainimg{background-position:30% 100%;}
+    .mainimg{background-position:62.5% 85%; opacity:0.8;}
+    .closer{position:absolute; padding-right:2em; padding-top:2.8em;}
+    h3.about{font-size:20px;}
+    h3.flair-fontmain{font-size:21px;  }
+    h1.about{font-size:38px;}
+    p.abouttext{font-size:20px;}
+    h1.title-fontabout{font-size: 47px; padding-bottom:1em;}
+    p.contact{font-size:20px;}
+    /* make method headers smaller */
+}
+@media only screen and (min-width: 481px) and (max-width: 720px)
+{
+    .closer{right: 0;position: absolute;padding-right: 6em;}
+    h1.midlogo{position: absolute;  top: 0;  padding-left: .75em;  padding-top: 0.5em;}
+    #mainmenu{padding-top: 7em;}
+    .smicon{padding-top: 15em;}
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1028px)
+{
+
+
 }

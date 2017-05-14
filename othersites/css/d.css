@@ -1,0 +1,199 @@
+.container{
+    width: 1500px;
+    align-items: center;
+    background-image: url("Hackaton/1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 0 auto;
+    height: 700px;
+    padding-bottom: 1em;
+    color: white;
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+.pic{
+    width: 15em;
+    margin-top: 7.5em;
+    margin-right: 2em;
+    margin-left: 10em;
+}
+.center{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border:1em 1em;
+    margin-left: 7.5em;
+    margin-top: 6em;
+    color: white;
+}
+.h{
+    margin-right: 1em;
+    font-size: 1.5em;
+    width: 8em;
+}
+.e{
+    margin-right: 3em;
+    font-size: 1.5em;
+}
+.a{
+    width: 15;
+    font-size: 1.5em;
+    width: 14em;
+}
+.d{
+    margin-right: 3em;
+    font-size: 1.5em;
+}
+.e{
+    margin-right: 3em;
+    font-size: 1.5em;
+}
+.headerr{
+    font-size: 2.5em;
+    margin-top: 12em;
+    margin-right: 5em;
+    width: 15em;
+}
+.ch{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+.centro{
+    margin-left: 14em;
+}
+.medium{
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    background-color: #ebebeb;
+}
+.top{
+    margin-top: 1em;
+}
+.text{
+    width: 30em;
+    justify-content: left;
+    margin-left: 5em;
+    margin-top: 4em;
+    padding-right: 5em;
+}
+.text1{
+    width: 35em;
+    justify-content: left;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+.img{
+    margin-top: 5em;
+    margin-right: 6em;
+}
+.img1{
+    margin-top: 8em;
+    margin-right: 6em;
+    margin-bottom: 4em;
+}
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+.lo{
+    width:1500px;;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    background-color: #dfddc6;
+}
+.loc{
+   width: 50em;
+   font-size: 18px;
+   padding-left: 2em;
+
+}
+#map{
+    width: 40em;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+/*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*//*NEXT CONTAINER*/
+.around{
+    width: 1500px;
+    align-items: center;
+    background-image: url("Hackaton/4.jpg");
+    background-position: center;
+    margin: 0 auto 0 auto;
+    height: 700px;
+    padding-bottom: 1em;
+}
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    width: 4em;
+}
+tr
+
+
+.container5{
+    width:1500px;
+    height:600px;
+    background-color: #9d9b30;
+}
+.pictures11{
+    display:flex;
+    align-content:space-between;
+    flex-direction:row;
+    margin: 0 auto;
+    justify-content:center;
+    padding-top:5em;
+}
+
+img.div5{
+    padding-right:.5em;
+}
+h1.div5h1{
+    color:red;
+    padding-left:5em;
+    padding-top:2em;
+}
+.container6{
+    width:1500px;
+    height:600px;
+    background-color:#dfdcc9;
+}
+form{
+    padding-left:10em;
+}
+.div6form{
+    padding-top:5em;
+}
+img.div6{
+    float:right;
+    margin:0 auto;
+    padding-right:20em;
+}
+img.div6shape{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top:4.3em;
+}

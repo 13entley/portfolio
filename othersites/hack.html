@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/d.css">
+    <title>FamRem</title>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="pic" src="logo.png"><div class="center"><div class="h">O PROJEKTU</div><div class="e">LOKALITA</div><div class="a">PREHLED BYTU A CEN</div><div class="d">GALERIE</div><div class="e">KONTAKT</div></div>
+        </div>
+        <div class="ch">
+        <div class="headerr">
+            K NASTEHOVANI XX/2018
+        </div>
+        </div>
+    </div> 
+   
+    <div class="medium">
+            <div class="img">
+                <img src="Hackaton/house1.png">
+            </div>
+            <div class="text">
+                <h2>O PROJEKTU</h2>
+                <p>Vysoce kvalitní bydlení citlivě zasazené do staré zástavby. Rezidence 
+                Želanského je 4-patrový dům s 9 byty a 1 ateliérem o velikosti v rozmezí 
+                1KK (34.1 m2) až mezonetové 4KK (150,1 m2).</p>
+                <p>Byt je možné zakoupit s balkonem, terasou, předzahrádkou či podkrovní 
+                    galerií. Rezidence Želanského nabízí kryté i venkovní parkování, sklepy, 
+                    kočárkárnu či sušárnu.</p>
+            </div>
+            <div class="img1">
+                <img src="Hackaton/house2.png">
+            </div>
+            <div class="text1">
+                <h2>DISPOZICE DOMU</h2>
+                <p>Rezidence Želanského má charakter rodinného klidného bydlení. Dům je rozdělen 
+                    na přízemí a 4 nadzemní podlaží a skýtá 9 bytů a 1 ateliér.</p>
+                <p>PRIZEMI navíc nabízi parkovací garáže pro 2 a 3 vozy či venkovní krytá parkování pro 
+                    4 vozy, dále 9 sklepů, kočárkárnu a sušárnu.</p>
+                <p>PRVNI PODLAZI nabízí 3 byty o dispozici 1KK s prostornou předzahrádkou a terasou.</p>
+                <P>DRUHE PODLAZI nabízí 4 byty o dispozici 1KK s jedním balkonem či 3KK se dvěma 
+                    balkony.</p>
+                <p>TRETI A CTVRTE nadzemní podlaží obsahuje 2 nadstandardní mezonetové byty 
+                    o dispozic 4KK s podkrovní galerií a balkony</p>
+            </div>
+    </div>
+    <div class="lo">
+        <div class="loc">
+            <h3>LOKALITA</h3>
+            <p>Rezidence Želanského se nachází v klidné vilové čtvrti v pražské části 
+               Praha 6 s výbornou dopravní dostupností jak do centra města, tak na 
+               letiště Václava Havla. Přímo před domem se nachází zastávka autobusu, 
+               v docházkové vzdálenosti od rezidence jsou široké možnosti nákupů s 
+               několika obchodními domy. Občanská vybavenost okolí (školky,školky,
+               pošta, nemocnice atd.) je nadstandardní.</p>
+               <br>
+        </div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4mbEGBuOi-Sr9ayqwRw0_Uq6Od2zykm4
+content_copy&callback=initMap">
+    </script>
+        </div>
+    </div>
+    <div class="around">
+            <table>
+            <thead>
+		<tr>
+			<th>PODLAZI</th>
+			<th>CISLO BYTU</th>
+			<th>POCET</th>
+            <th>BYT m</th>
+            <th>BALKON 1 m</th>
+            <th>BALKON 2 m</th>
+            <th>TERASA</th>
+            <th>PREDZAHRADKA</th>
+            <th>GALERIE PODKROVI m</th>
+            <th>GALERIE BALKON m</th>
+            <th>ROZHOLA CELKEM m</th>
+            <th>CENA</th>
+            <th>KE STAZENI</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+<td>Venkovni kratke parkovani</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>PDF</td>
+		</tr>
+		<tr>
+        <td></td>
+<td>Garaz</td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>PDF</td>
+		</tr>
+		<tr>
+        <td></td>
+<td>Garaz</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>PDF</td>
+		</tr>
+        <tr>
+            <td>PRIZEMI</td>
+<td>Sklep</td>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+        <td>1. NP</td>
+<td>Byt 101 (1KK)</td>
+<td></td>
+<td>49.7</td>
+<td></td>
+<td></td>
+<td>16.7</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td>166.4</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td></td>
+<td>Byt 102 (1KK)</td>
+<td></td>
+<td>49.7</td>
+<td></td>
+<td></td>
+<td>16.7</td>
+<td>72.5</td>
+<td></td>
+<td></td>
+<td>138.9</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td></td>
+<td>Byt 103 (1KK)</td>
+<td></td>
+<td>47.5</td>
+<td></td>
+<td></td>
+<td>28.9</td>
+<td>33</td>
+<td></td>
+<td></td>
+<td>109.4</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td></td>
+<td>Byt 201 (1KK)</td>
+<td></td>
+<td>80.8</td>
+<td>2.8</td>
+<td>3.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>87.4</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td>2. NP</td>
+<td>Byt 202 (1KK)</td>
+<td></td>
+<td>80.8</td>
+<td>2.8</td>
+<td>3.8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>87.4</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td></td>
+<td>Byt 203 (1KK)</td>
+<td></td>
+<td>31.2</td>
+<td>2.9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>34.1</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td></td>
+<td>Byt 204 (1KK)</td>
+<td></td>
+<td>31.2</td>
+<td>2.9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>34.1</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td></td>
+<td>Byt 301 (1KK)</td>
+<td></td>
+<td>97</td>
+<td>7.6</td>
+<td>7.2</td>
+<td></td>
+<td></td>
+<td>32.9</td>
+<td>5.4</td>
+<td>150.1</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+        <tr>
+            <td>3 + 4 NP</td>
+<td>Byt 302 (1KK)</td>
+<td></td>
+<td>97</td>
+<td>7.6</td>
+<td>7.2</td>
+<td></td>
+<td></td>
+<td>32.9</td>
+<td>5.4</td>
+<td>50.1</td>
+<td></td>
+<td>PDF</td>
+        </tr>
+	</tbody>
+            </table>
+        </div>
+    <div class="container5">
+        <h1 class="div5h1"> Gallery</h1>
+
+        <div class="pictures11">
+            <img class="div5" src="div5img1.jpg">
+            <img class="div5" src="div5img2.jpg">
+            <img class="div5" src="div5img3.jpg">
+            <img class="div5" src="div5img4.jpg">
+
+        </div>
+    </div>
+    <div class="container6">
+        <h1 class="div5h1"> Contact Us</h1>
+
+        <img class="div6" src="div6img1.jpg">
+
+        <div class="div6form">
+            <form action="submit.php" method="post">
+
+                <input type="text" name="name" value="" id="name"
+                       placeholder="Name" style="margin-bottom:5px; width:320px">
+                <br>
+                <input type="text" name="surname" id="surname" placeholder="Surname" style="margin-bottom:5px; width:320px">
+                <br>
+                <input type="number" name="number" value="" id="number"
+                       placeholder="Phone Number" style="margin-bottom:5px; width:320px">
+                <br class="br">
+                <input type="email" name="email" value="" id="email"
+                       placeholder="Email" style="margin-bottom:5px; width:320px" >
+                <br>
+                <textarea name="note" rows="5" cols="23" placeholder="Your Message" style="width:320px"></textarea>
+            </form>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

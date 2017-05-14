@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Damion|Dr+Sugiyama|Lalezar" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="icon" href="img/favicon.png" type="favicon" />
     <script
             src="http://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -29,22 +28,10 @@
             <nav class="menu">
                 <hgroup class="col-md-6">
                     <div id="mainmenu">
-                        <a href="#" class="about" data-content="about">
-                            <i class="icon about"></i>
-                            <spanmain>About</spanmain>
-                        </a>
-                        <a href="#" class="work" data-content="work">
-                            <i class="icon work"></i>
-                            <spanmain>Work</spanmain>
-                        </a>
-                        <a href="#" class="method" data-content="method">
-                            <i class="icon method"></i>
-                            <spanmain>Method</spanmain>
-                        </a>
-                        <a href="#" class="contact" data-content="contact">
-                            <i class="icon contact"></i>
-                            <spanmain>Contact</spanmain>
-                        </a>
+                        <a href="#" class="about" data-content="about"><i class="icon about"></i><spanmain>About</spanmain></a>
+                        <a href="#" class="work" data-content="work"><i class="icon work"></i><spanmain>Work</spanmain></a>
+                        <a href="#" class="method" data-content="method"><i class="icon method"></i><spanmain>Method</spanmain></a>
+                        <a href="#" class="contact" data-content="contact"><i class="icon contact"></i><spanmain>Contact</spanmain></a>
                     </div>
                 </hgroup>
             </nav>
@@ -77,49 +64,74 @@
     </section>
 
 
-    <section class="row">
+    <script>
+        $(function () {
+            $('#mainmenu a').click(function (ev) {
+                var page = $('.popup_content.active');
+                hidePage(page);
 
-
-        <script>
-            $(function () {
-                $('#mainmenu a').click(function (ev) {
-                    var content = $(this).data('content');
-                    var div = $('#' + content);
-                    div.show();
-
-                    div.css({
-                        'position': 'absolute',
-                        'top': document.body.clientHeight + 'px',
-                        'min-height': (document.body.clientHeight) + 'px'
-                    });
-                    div.animate({
-                        'top': '150px'
-                    });
-                });
+                var content = $(this).data('content');
+                var div = $('#' + content);
+                showPage(div);
             });
-        </script>
-    </section>
+
+            $('.closer').click(function (ev) {
+                var page = $('.popup_content.active');
+                hidePage(page);
+            });
+
+
+            function showPage(page) {
+                page.show();
+
+                page.css({
+                    'position': 'absolute',
+                    'top': document.body.clientHeight + 'px',
+                    'min-height': (document.body.clientHeight) + 'px'
+                });
+
+                page.animate({
+                    'top': '180px'
+                }, 1000, function () {
+                    page.addClass('active');
+                });
+
+            }
+
+            function hidePage(page) {
+
+                page.animate({
+                    'top': document.body.clientHeight + 'px'
+                }, 1000, function () {
+                    page.removeClass('active');
+                    page.hide();
+                });
+
+            }
+        });
+    </script>
 
 
     <div id="about" class="popup_content" style="display: none"><h1 class="about">ABOUT</h1>
+        <div class="closer">
+            <img id="closelogo1" src="img/lessthandown64.png" style="width:48px; height:48px">
+        </div>
         <section class="container">
             <br>
             <div class="aboutbody">
                 <section class="row">
                     <section class="col-md-12">
-                        <h3 class="aboutflair">---Front-End & PHP Developer---</h3>
+                        <h3 class="flair-fontmain">---Front-End & PHP Developer---</h3>
                     </section>
-                    <br>
                     <section class="col-md-12">
                         <h1 class="about">Eric Bentley</h1>
                     </section>
-                    <br>
                 </section>
                 <section class="row">
                     <section class="col-md-12">
-                        <h3 class="aboutflair">HTML5 | CSS3 | Javascript | PHP | AJAX |
-                            Node.JS | PURE | LeSS | SaSS | JQuery |
-                            SQL | mySQL </h3>
+                        <h3 class="about">HTML5 | CSS3 | Javascript | PHP | AJAX |
+                            Node.JS | LeSS | SaSS | JQuery |
+                            SQL | mySQL | AMP⚡ </h3>
 
                     </section>
                 </section>
@@ -139,73 +151,78 @@
         </section>
     </div>
     <div id="work" class="popup_content" style="display: none"><h1 class="about">WORK</h1>
+        <div class="closer">
+            <img id="closelogo1" src="img/lessthandown64.png" style="width:48px; height:48px">
+        </div>
         <section class="container">
             <br><br><br><br><br>
             <section class="row">
-                <section class="col-md-3 col-md-offset-3">
-                    <h1>Movies Website</h1>
+                <section class="col-md-4 col-md-offset-2">
+                    <a href="othersites/homepage.html"><img src="img/movie.png" alt="movies" style="width:300px;height:350px;"><h1 class="title-fontabout">Movies Website</h1></a>
                 </section>
-                <section class="col-md-3">
-                    <h1>YourParty</h1>
+                <section class="col-md-4">
+                    <a href="othersites/challenge2.html"><img src="img/yourparty.png" alt="yourparty" style="width:300px;height:350px;"><h1 class="title-fontabout">YourParty</h1></a>
                 </section>
-                <section class="col-md-3"></section>
             </section>
             <br>
             <br>
             <section class="row">
-                <section class="col-md-3 col-md-offset-3">
-                    <h1>Hackathon Real Estate</h1>
+                <section class="col-md-4 col-md-offset-2">
+                    <a href="othersites/hack.html"><img src="img/hackathon.png" alt="hackathon" style="width:300px;height:350px;"><h1 class="title-fontabout">Hackathon</h1></a>
                 </section>
-                <section class="col-md-3">
-                    <h1>Later Project</h1>
+                <section class="col-md-4">
+                    <h1 class="title-fontabout">Later Project</h1>
                 </section>
             </section>
         </section>
     </div>
 
     <div id="method" class="popup_content" style="display: none"><h1 class="about">METHOD</h1>
+        <div class="closer">
+            <img id="closelogo" src="img/lessthandown64.png" style="width:48px; height:48px">
+        </div>
         <section class="container">
-            <br><br><br><br>
             <div class="methodbody">
                 <section class="row">
-                    <section class="col-md-2 col-md-offset-3">
-                        <p class="methodheader">
-                            Discovery:
-                            <br>
-                            <br>
-                            Research:
-                            <br>
-                            <br>
-                            Design:
-                            <br>
-                            <br>
-                            Sketch:
-                            <br>
-                            <br>
-                            Mockup:
-                            <br>
-                            <br>
-                            Implementation:
-                        </p>
+                    <section class="col-md-12">
+                        <h1 class="title-fontabout"> Discovery </h1>
+                        <p>Before starting, I fathom a clear and direct way to go about
+                            completing the project.</p>
+
+                        <h1 class="title-fontabout"> Research </h1>
+                        <p> Understanding possible obstacles is important, so I gather data on other similar projects
+                            or websites to further understand some niches that may not have been filled.</p>
+
+                        <h1 class="title-fontabout">Design </h1>
+                        <p> First step after doing research is to understand how the project will be designed. I work
+                            within Sketch to create a clever mockup of the project and start working on intriguing
+                            logos or custom graphics.</p>
+
+                        <h1 class="title-fontabout"> Sketch </h1>
+                        <p> Using Sketch, I then start designing the project entirely, creating a well though out
+                            presentation
+                            of the project and how I envision it to look when completely finished. </p>
+
+                        <h1 class="title-fontabout"> Implementation</h1>
+                        After the final design is complete, I then get to work on making the design become a reality,
+                        adding special transitions or animations that improve overall user experience.
+
                     </section>
-                    <section class="col-md-offset-1 col-md-5">
-                        <p class="methodtext">
-                            I first understand the project scope, interviewing users,
-                            and ask targeted questions to help determine the emotion and feel of the brand.
-                            <br>
-                        </p>
-                    </section>
+
                 </section>
             </div>
         </section>
     </div>
     <div id="contact" class="popup_content" style="display: none"><h1 class="about">CONTACT</h1>
+        <div class="closer">
+            <img id="closelogo1" src="img/lessthandown64.png" style="width:48px; height:48px">
+        </div>
         <section class="container">
             <section class="row">
                 <section class="col-md-6">
                     <br><br>
                     <div class="contacttext">
-                        <h1 class="about">Coffee and Chat?</h1>
+                        <h1 class="title-fontabout">Coffee and Chat?</h1>
                         <p class="contact"> If you have any questions, concerns or comments, please feel free to reach
                             me
                             at any of the contact methods below.</p>
@@ -239,7 +256,6 @@
             </section>
         </section>
     </div>
-    <div class="backgroundstandard"></div>
 </div>
 </body>
 </html>
