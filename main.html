@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="icon" href="img/favicon.png" type="favicon" />
+
     <script
             src="http://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
-    <title>Eric Bentley | Front-End & PHP Developer</title>
+    <title>Eric Bentley | Frontend & PHP Developer</title>
 </head>
 <body>
 <div class="mainimg">
@@ -23,15 +24,15 @@
         <section class="row">
             <hgroup class="col-md-3">
                 <h1 class="title-fontmain">Eric Bentley</h1>
-                <h1 class="flair-fontmain">Front-End & PHP Developer</h1>
+                <h1 class="flair-fontmain">Frontend & PHP Developer</h1>
             </hgroup>
             <nav class="menu">
                 <hgroup class="col-md-6">
                     <div id="mainmenu">
-                        <a href="#" class="about" data-content="about"><i class="icon about"></i><spanmain>About</spanmain></a>
-                        <a href="#" class="work" data-content="work"><i class="icon work"></i><spanmain>Work</spanmain></a>
-                        <a href="#" class="method" data-content="method"><i class="icon method"></i><spanmain>Method</spanmain></a>
-                        <a href="#" class="contact" data-content="contact"><i class="icon contact"></i><spanmain>Contact</spanmain></a>
+                        <a href="#" class="about" data-content="about"><spanmain>About</spanmain></a>
+                        <a href="#" class="work" data-content="work"><spanmain>Work</spanmain></a>
+                        <a href="#" class="method" data-content="method"><spanmain>Method</spanmain></a>
+                        <a href="#" class="contact" data-content="contact"><spanmain>Contact</spanmain></a>
                     </div>
                 </hgroup>
             </nav>
@@ -57,16 +58,17 @@
         </section>
     </section>
 
-    <br><br><br><br><br><br><br>
 
     <section class="middleLogo">
-        <h1 class="midlogo">E3</h1>
+        <a href="#" class="about" data-content="about"><h1 class="midlogo">E3</h1></a>
     </section>
 
 
     <script>
-        $(function () {
-            $('#mainmenu a').click(function (ev) {
+
+
+        $(document).ready(function () {
+            $('#mainmenu a, .middleLogo a').click(function (ev) {
                 var page = $('.popup_content.active');
                 hidePage(page);
 
@@ -109,6 +111,11 @@
 
             }
         });
+
+
+
+
+
     </script>
 
 
@@ -121,17 +128,21 @@
             <div class="aboutbody">
                 <section class="row">
                     <section class="col-md-12">
-                        <h3 class="flair-fontmain">---Front-End & PHP Developer---</h3>
+                        <h3 class="flair-fontmain">---Frontend & PHP Developer---</h3>
                     </section>
+                    <div class="col-md-12">
+                        <img class="me" src="img/me1.png">
+                    </div>
                     <section class="col-md-12">
                         <h1 class="about">Eric Bentley</h1>
                     </section>
+
                 </section>
                 <section class="row">
                     <section class="col-md-12">
                         <h3 class="about">HTML5 | CSS3 | Javascript | PHP | AJAX |
-                            Node.JS | LeSS | SaSS | JQuery |
-                            SQL | mySQL | AMP⚡ </h3>
+                            Node.JS | LeSS / SaSS | Python | JQuery |
+                            SQL | AMP⚡ </h3>
 
                     </section>
                 </section>
@@ -141,7 +152,7 @@
                         <p class="abouttext"><br>Throughout my career I have developed plenty of skills to help not
                             only with web development but also procurement and implementation. My background
                             consists of sales, marketing, and an entrepreneurial spirit along with my skills
-                            in front-end and back-end development.
+                            in frontend and backend development.
                             <br>
 
                         </p>
@@ -155,7 +166,6 @@
             <img id="closelogo1" src="img/lessthandown64.png" style="width:48px; height:48px">
         </div>
         <section class="container">
-            <br><br><br><br><br>
             <section class="row">
                 <section class="col-md-4 col-md-offset-2">
                     <a href="othersites/homepage.html"><img src="img/movie.png" alt="movies" style="width:300px;height:350px;"><h1 class="title-fontabout">Movies Website</h1></a>
